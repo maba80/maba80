@@ -13,8 +13,8 @@
         "cells": [
           {
             "position": {
-              "x": 360,
-              "y": 30
+              "x": 350,
+              "y": 220
             },
             "size": {
               "width": 112.5,
@@ -22,8 +22,8 @@
             },
             "attrs": {
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -95,23 +95,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "b0a115a9-7032-4b4b-ada6-e95c92e94470"
+                  "id": "f178fa0e-f92c-4a0d-b37a-395b91ea2487"
                 },
                 {
                   "group": "right",
-                  "id": "55ffde81-1162-4fc0-b392-6339661890e4"
+                  "id": "347c25dc-1a0a-442c-8305-63059ccb5aeb"
                 },
                 {
                   "group": "bottom",
-                  "id": "903aef0a-8c74-4453-995f-99d7cfbc7571"
+                  "id": "8ea1badb-dea5-45d9-98cf-cbd6bebf220a"
                 },
                 {
                   "group": "left",
-                  "id": "5879de6d-723b-4310-a4fe-cd37fc2284fa"
+                  "id": "691fc831-d8b3-42af-827f-466ade778f24"
                 }
               ]
             },
-            "id": "16e3637b-84b9-4afe-bb40-38666bc729fe",
+            "id": "d18dcb26-c63e-47e4-a275-378420cb3339",
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
@@ -119,209 +119,28 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "0bdf0cb0-5477-4ff8-bfbe-32589f5ef651",
+                  "title": "New STRIDE threat1",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat1",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A1",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "1"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 1
+              }
             }
-          },
-          {
-            "position": {
-              "x": 650,
-              "y": 230
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "10593e3e-e693-46ec-9908-f084445f26ea"
-                },
-                {
-                  "group": "right",
-                  "id": "281be8d6-de6c-44dc-9f22-6c226d68355a"
-                },
-                {
-                  "group": "bottom",
-                  "id": "4042da4b-9b66-4c82-b65c-336f2ec43387"
-                },
-                {
-                  "group": "left",
-                  "id": "4e08c57b-a798-4965-b9ed-014bc6237774"
-                }
-              ]
-            },
-            "id": "4469d4cc-bafc-4225-be66-4ae8a6356da9",
-            "zIndex": 2,
-            "data": {
-              "type": "tm.Process",
-              "name": "Process",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Trust Boundary"
-                  }
-                }
-              }
-            ],
-            "id": "97da1692-eb04-4835-b794-4ba2f17411b4",
-            "source": {
-              "x": 450,
-              "y": 180
-            },
-            "target": {
-              "x": 740,
-              "y": 20
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 40
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web Login",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Web Login"
-            ],
-            "id": "dc762730-931e-48c2-b0ac-e8f46b94928c",
-            "source": {
-              "cell": "16e3637b-84b9-4afe-bb40-38666bc729fe",
-              "port": "55ffde81-1162-4fc0-b392-6339661890e4"
-            },
-            "target": {
-              "cell": "4469d4cc-bafc-4225-be66-4ae8a6356da9",
-              "port": "10593e3e-e693-46ec-9908-f084445f26ea"
-            },
-            "vertices": []
           }
         ],
         "version": "v2.3.0-RC1",
@@ -334,6 +153,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
